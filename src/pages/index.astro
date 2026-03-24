@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import BackgroundAnimation from '../components/BackgroundAnimation.astro';
+import Projects from '../components/Projects.astro';
+import Technologies from '../components/Technologies.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <div class="max-w-[1280px] w-full m-auto relative z-10 px-4">
+    <Header />
+    
+    <div class="grid grid-cols-[1fr_1fr] max-w-[1040px] m-auto max-md:flex max-md:flex-col">
+      <Hero />
+      <div class="max-sm:hidden flex justify-center w-full">
+        <BackgroundAnimation />
+      </div>
+    </div>
+
+    <Projects />
+    <Technologies />
+    <Footer />
+  </div>
+</Layout>

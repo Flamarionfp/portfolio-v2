@@ -1,0 +1,12 @@
+---
+const { href = "#footer", text = "Entre em contato" } = Astro.props;
+---
+<a href={href} class="relative flex items-center justify-center w-[262px] h-[64px] rounded-[50px] text-2xl font-semibold text-white cursor-pointer transition-all duration-500 overflow-hidden mb-20 max-md:w-[184px] max-md:h-[48px] max-md:text-base max-md:mb-16 max-sm:w-full max-sm:h-[32px] max-sm:text-sm max-sm:mb-8 group">
+  <!-- ButtonBack Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-l from-[#00DBD8] to-[#B133FF]"></div>
+  <!-- ButtonFront Gradient -->
+  <button class="absolute inset-0 flex items-center justify-center rounded-[50px] bg-gradient-to-l from-[#13ADC7] to-[#945DD6] cursor-pointer transition-opacity duration-400 group-hover:opacity-0 focus:outline-none">
+    {text}
+  </button>
+  <span class="relative z-10 pointer-events-none group-hover:opacity-100 opacity-0 transition-opacity duration-400">{text}</span>
+</a>

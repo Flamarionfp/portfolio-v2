@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", sans-serif;
+  --color-primary-1: hsl(204, 23.8%, 95.9%);
+  --color-bg-1: #0a0a0a;
+  --color-bg-2: hsl(232.7, 27.3%, 23.7%);
+  --color-accent-1: hsl(34.9, 98.6%, 72.9%);
+  --color-btn: hsl(205.1, 100%, 36.1%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap');
+
+html, body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--color-bg-1);
+  color: var(--color-primary-1);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
